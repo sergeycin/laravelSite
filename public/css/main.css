@@ -1,0 +1,598 @@
+    @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: "Source Sans Pro", sans-serif;
+        size: 100%;
+        min-height: 800px;
+        max-height: fit-content;
+        background: rgb(15, 32, 39);
+        background: linear-gradient(90deg, rgba(15, 32, 39, 1) 0%, rgba(44, 83, 100, 1) 100%);
+        color: #fff;
+    }
+    
+    .container-hobbies {
+        display: flex;
+    }
+    
+    .container-hobbies img {
+        object-fit: cover;
+        margin-bottom: 100px;
+    }
+    
+    p {
+        padding: 5px;
+        font-size: 20px;
+    }
+    
+    .container {
+        width: 100%;
+    }
+    
+    header {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 150px;
+    }
+    
+    .title-block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        font-size: 20px;
+        font-style: bold;
+        color: white;
+    }
+    
+    .title {
+        z-index: 1;
+    }
+    
+    ul {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .ul_anchor a {
+        color: #fff;
+        font-size: 20px;
+    }
+    
+    .content {
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .index {
+        text-align: center;
+    }
+    
+    .index img {
+        width: 50%;
+        border-radius: 7px;
+    }
+    
+    aside {
+        padding: 20px;
+        width: 15%;
+    }
+    
+    .userpic {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        margin: 5px 5px;
+        margin-left: 0;
+    }
+    
+    a {
+        display: grid;
+        padding: 5px;
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    nav ul {
+        display: flex;
+        list-style: none;
+        margin: 0px 0px;
+        padding: 0;
+        border-bottom: 1px solid #fff;
+        border-top: 1px solid #fff;
+    }
+    
+    nav li a {
+        font-weight: bold;
+        padding: 20px;
+        display: flex;
+        color: #404040;
+        text-decoration: none;
+        transition: background 0.3s ease;
+        color: #fff;
+    }
+    
+    nav li a:hover {
+        background: #aab0b5;
+    }
+    
+    .skills li {
+        padding: 10px 0;
+        transition: transform 0.5s ease;
+        cursor: pointer;
+    }
+    
+    .skills li:hover {
+        background: #aab0b5;
+    }
+    
+    .container_img {
+        width: 100%;
+    }
+    
+    .container_img img {
+        border-radius: 5px;
+    }
+    
+    .content-wrapper-img {
+        display: flex;
+        margin-left: 10px;
+    }
+    
+    .content-wrapper-img .container_img {
+        width: 150px;
+        height: 150px;
+        margin-left: 20px;
+        color: #fff;
+    }
+    
+    .divcenter {
+        width: 680px;
+        display: block;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+    
+    j form.new_form {
+        width: 600px;
+        border: 1px solid red;
+        display: block;
+    }
+    
+    form.new_form textarea {
+        width: 99%;
+        margin: 10px 0;
+        height: 100px;
+        resize: none;
+        text-indent: 20px;
+        padding: 12px 0;
+    }
+    
+    form.new_form input[type="text"] {
+        width: 49%;
+        padding: 10px 0;
+        text-indent: 15px;
+    }
+    
+    form.new_form input {
+        width: 49%;
+        padding: 10px 0;
+        text-indent: 15px;
+    }
+    
+    form.new_form {
+        width: 600px;
+        border: 1px solid #cecece;
+        display: block;
+        height: 250px;
+        padding: 40px;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 3px 6px rgba(0, 0, 0, 0.22);
+        margin: auto;
+    }
+    
+    form.new_form input[type="submit"] {
+        float: right;
+    }
+    
+    form.new_form input[type="clear"] {
+        float: left;
+    }
+    
+    h2.forms {
+        text-align: center;
+        font-family: sans-serif;
+        font-weight: 100;
+        color: #b1b1b1;
+        text-transform: uppercase;
+    }
+    /*Img Content*/
+    
+    .content.img {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    
+    .container_img {
+        margin: 15px;
+        width: 150px;
+        height: 150px;
+    }
+    
+    .container_img img {
+        max-width: 150px;
+    }
+    /*Contact*/
+    
+    .contact__left,
+    .contact__right {
+        width: 50%;
+        margin-left: 15px;
+        margin-right: 15px;
+        position: relative;
+    }
+    
+    .contact__left h3,
+    .contact__right h3 {
+        margin-bottom: 10px;
+    }
+    
+    .contact__left label,
+    .contact__right label {
+        display: block;
+        width: 100%;
+        height: 40px;
+        margin-bottom: 40px;
+    }
+    
+    .container.contact {
+        display: flex;
+        padding-top: 20px;
+    }
+    
+    .container.contact hr {
+        border: 1px rgb(233, 233, 233) solid;
+        background-color: rgb(233, 233, 233);
+        margin-top: 5px;
+        width: 80%;
+    }
+    
+    input {
+        padding: 0;
+        margin: 0;
+        border: 0;
+        color: #fff;
+        border: none;
+        background: none;
+    }
+    
+    .input:active,
+    .input:hover,
+    .input:focus {
+        outline: 0;
+        outline-offset: 0;
+        width: 100%;
+    }
+    
+    label .age__container {
+        margin-bottom: 5px;
+    }
+    
+    .contact__buttons {
+        margin-top: 80px;
+        border: none;
+    }
+    
+    .contact__buttons button {
+        background-color: #546ee5;
+        color: #fff;
+        font-weight: bold;
+        border: none;
+        border-radius: 3px;
+        padding: 20px;
+    }
+    
+    .contact__buttons button:hover {
+        background-color: #495fc2;
+    }
+    
+    .contact__buttons button:active {
+        background-color: #3e50a1;
+    }
+    /*Title Contents*/
+    
+    .content__links li {
+        display: flex;
+        align-items: center;
+    }
+    
+    .content__links li img {
+        width: 20px;
+        height: 20px;
+    }
+    /*Time*/
+    
+    .time {
+        margin-right: 20px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+    }
+    /*Calendar*/
+    
+    .calendar {
+        width: 328px;
+        margin-top: 80px;
+        /* Month header */
+        /* Month list */
+        /* Previous button inside month header */
+        /* Next button */
+        /* Weekdays (Mon-Sun) */
+        /* Days (1-31) */
+        /* Highlight the "current" day */
+    }
+    
+    .calendar ul {
+        list-style-type: none;
+    }
+    
+    .calendar body {
+        font-family: Verdana, sans-serif;
+    }
+    
+    .calendar .month {
+        padding: 30px 25px;
+        width: 100%;
+        background: #495fc2;
+        text-align: center;
+    }
+    
+    .calendar .month ul {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .calendar .month ul li {
+        color: white;
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+    
+    .calendar .month .prev {
+        float: left;
+        padding-top: 10px;
+    }
+    
+    .calendar .month .next {
+        float: right;
+        padding-top: 10px;
+    }
+    
+    .calendar .weekdays {
+        margin: 0;
+        padding: 10px 0;
+        background-color: #ddd;
+    }
+    
+    .calendar .weekdays li {
+        display: inline-block;
+        width: 13.6%;
+        color: #666;
+        text-align: center;
+    }
+    
+    .calendar .days {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        padding: 10px 0;
+        height: 100px;
+        height: auto;
+        background: #eee;
+        margin: 0;
+    }
+    
+    .calendar .days li {
+        list-style-type: none;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        margin-bottom: 5px;
+        font-size: 12px;
+        color: #777;
+    }
+    
+    .calendar .days li.active {
+        padding: 5px;
+        background: #495fc2;
+        color: white !important;
+    }
+    
+    .photo__background {
+        display: none;
+        position: absolute;
+        z-index: 300;
+        align-items: center;
+        justify-content: center;
+        background-color: #2c2c2cbd;
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .contact h3 {
+        position: relative;
+    }
+    
+    .warning {
+        display: none;
+        position: absolute;
+        align-items: center;
+        padding-left: 20px;
+        z-index: 100;
+        width: 247px;
+        height: 22px;
+        left: 107px;
+        top: -2px;
+        border-radius: 3px;
+        background-color: #a52a2a85;
+        color: #fff;
+    }
+    
+    .photo__open {
+        display: none;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 150px;
+        left: 0;
+        right: 0;
+        width: 300px;
+        text-align: center;
+        height: 300px;
+        /*     background-color: #f3ac41; */
+        z-index: 500;
+    }
+    
+    .photo__open img {
+        width: 100%;
+    }
+    
+    .photo__open .buttons__open {
+        margin-top: 20px;
+        height: 40px;
+        width: 100%;
+        color: #fff;
+        font-weight: bold;
+        font-size: 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .helper {
+        position: absolute;
+        display: none;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+        font-weight: bold;
+        z-index: 100;
+        width: 200px;
+        height: 100px;
+        background: rgb(115, 103, 240);
+        background: linear-gradient(90deg, rgba(115, 103, 240, 1) 4%, rgba(206, 159, 252, 0.8242647400757178) 100%);
+        left: 240px;
+        top: 43px;
+        border-radius: 2px;
+        box-shadow: 4px 4px 8px 1px rgba(34, 60, 80, 0.2);
+    }
+    
+    .question {
+        display: none;
+        flex-wrap: wrap;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 100px;
+        left: 0;
+        right: 0;
+        z-index: 450;
+        width: 500px;
+        height: 300px;
+        box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+        background-color: #fff;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+    }
+    
+    .question__value {
+        width: 100%;
+        color: black;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .question__buttons {
+        display: flex;
+        width: 100%;
+        margin-left: 50px;
+        margin-right: 50px;
+        justify-content: space-between;
+    }
+    
+    .question__left,
+    .question__right {
+        display: flex;
+        font-weight: bold;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: rgb(174, 218, 219);
+        border-radius: 5px;
+        width: 100px;
+        height: 40px;
+    }
+    
+    .background-question {
+        display: none;
+        position: absolute;
+        z-index: 100;
+        align-items: center;
+        justify-content: center;
+        background-color: #2c2c2cbd;
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .container_pop {}
+    
+    .img__popover {
+        display: block;
+    }
+    
+    body {
+        position: relative;
+    }
+    
+    .pop__popover {
+        display: none;
+        position: absolute;
+        z-index: 1;
+        width: 100vw;
+        height: 100vh;
+        width: 300px;
+        height: 300px;
+        background-color: aquamarine;
+    }
+    
+    input {
+        background-color: rgb(7, 6, 6);
+        border: solid 1px #6E6E6E;
+        height: 30px;
+        font-size: 18px;
+        vertical-align: 9px;
+    }
